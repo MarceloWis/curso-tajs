@@ -6,3 +6,4 @@ function sum(a,b) {
 it('sum two values', () => {
   expect(sum(1,1)).toBe(2)
 })
+
