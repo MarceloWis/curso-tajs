@@ -1,0 +1,22 @@
+{
+  "name": "aula01-setup-jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --injectGlobals false --runInBand test/",
+    "test:dev": "NODE_OPTIONS=--experimental-vm-modules npx jest --injectGlobals false --runInBand test/ --watchAll",
+    "test:debug": "node --experimental-vm-modules --inspect-brk node_modules/.bin/jest --injectGlobals false --runInBand test/ --watchAll"
+  },
+  "keywords": [],
+  "author": "marcelowis",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "engines": {
+    "node": "v18.20.8"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
